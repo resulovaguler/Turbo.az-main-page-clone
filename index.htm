@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Turbo.Az: avtomobil almaq, satmaq, təzə və işlənmiş avtomobillərin qiyməti Azərbaycan</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="src/input.css" />
+        <link rel="stylesheet" href="src/output.css" />
+    </head>
+    <body>
+        <header class="bg-[#fafafa]">
+            <div class="mobile-menu tablet:hidden bg-[#fff] flex flex-wrap justify-between px-[15px] py-[18px] border-b border-[#eaebf2]">
+                <div class="mobile-left text-[18px] font-bold text-[#8d94ad] uppercase">
+                    <h1 class="logo-mobile inline-flex text-[#ca1016] px-[11px]">Turbo.az</h1>
+                    <a href="#" class="px-[11px]">Bina.az</a>
+                    <a href="#" class="px-[11px]">Tap.az</a>
+                </div>
+                <a href=""><img class="w-[26px]" src="img/download.svg" alt=""></a>
+            </div>
+            <div class="form-box tablet:hidden mx-[15px] mt-[8px] mb-[15px] rounded-[13px] shadow-[0px_4px_21px_2px_rgba(0,0,0,0.04)]">
+                <div class="markalar rounded-t-[13px] bg-[#fff] px-[15px] leading-[54px] flex flex-wrap justify-between items-center">
+                    <div class="flex justify-between items-center gap-x-[7px]">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="21" viewBox="-5 -5 29 23" x="675" y="340"><path d="M18.89 4.023a.495.495 0 00-.376-.174h-1.85c-.456-1.164-1.05-2.304-1.726-2.734-2.337-1.487-8.538-1.487-10.875 0-.676.43-1.269 1.572-1.727 2.734H.486a.492.492 0 00-.376.174.456.456 0 00-.1.392l.274 1.283a.483.483 0 00.476.375h.548A3.113 3.113 0 00.52 8.148c-.004.918.357 1.748 1.016 2.335.007.006.015.01.021.016v1.796c0 .388.327.705.73.705h1.706a.72.72 0 00.73-.705v-.722h9.554v.722c0 .388.327.705.73.705h1.706a.72.72 0 00.73-.705v-1.76a3.094 3.094 0 001.038-2.323 3.107 3.107 0 00-.825-2.14h.584a.48.48 0 00.476-.376l.275-1.282a.462.462 0 00-.1-.391zM4.865 2.293c1.863-1.186 7.409-1.186 9.27 0 .363.23.828 1.158 1.255 2.294H3.611c.425-1.136.891-2.063 1.253-2.294zM2.682 8.325c0-.767.643-1.387 1.435-1.387.794 0 1.436.62 1.436 1.387S4.91 9.713 4.117 9.713c-.792 0-1.435-.621-1.435-1.388zm12.22 1.388c-.793 0-1.436-.621-1.436-1.388 0-.767.643-1.387 1.436-1.387.793 0 1.435.62 1.435 1.387s-.643 1.388-1.435 1.388z" fill="#CA1016"/></svg>
+                        <span>Bütün markalar</span>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-[17px]" viewBox="0 0 17 10"><script xmlns=""/><path fill="#B1B5C7" fill-rule="nonzero" d="M1.45 0 0 1.457 8.5 10 17 1.457 15.55 0 8.5 7.085z"/></svg>
+                </div>
+                <div class="bg-[#eaebf2] h-[1px]"></div>
+                <div class="filtrler rounded-b-[13px] bg-[#fff] px-[15px] leading-[54px] flex flex-wrap justify-between items-center">
+                    <div class="flex justify-between items-center gap-x-[7px]">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="27" height="25" viewBox="-5 -5 29 27" x="675" y="313"><path d="M9.216 8.687v6.891A.42.42 0 009.64 16a.42.42 0 00.422-.422v-6.89a2.145 2.145 0 001.72-2.1 2.145 2.145 0 00-1.72-2.099V1.422A.42.42 0 009.639 1a.42.42 0 00-.423.422v3.067a2.145 2.145 0 00-1.72 2.1c0 1.033.738 1.902 1.72 2.098zm.423-3.395c.716 0 1.298.581 1.298 1.296a1.298 1.298 0 01-2.597 0c0-.715.582-1.296 1.299-1.296zm5.573 6.931v3.355a.42.42 0 00.422.422.42.42 0 00.423-.422v-3.355a2.145 2.145 0 001.72-2.099 2.145 2.145 0 00-1.72-2.099V1.422A.42.42 0 0015.634 1a.42.42 0 00-.422.422v6.606a2.145 2.145 0 00-1.72 2.1c0 1.037.74 1.899 1.72 2.095zm.422-3.395c.717 0 1.299.581 1.299 1.296a1.298 1.298 0 01-2.597 0 1.3 1.3 0 011.298-1.296zM3.22 12.224v3.354a.42.42 0 00.423.422.42.42 0 00.422-.422v-3.354a2.145 2.145 0 001.72-2.098 2.145 2.145 0 00-1.72-2.1V1.423A.42.42 0 003.643 1a.42.42 0 00-.422.422V8.03a2.139 2.139 0 000 4.194zm.423-3.395c.716 0 1.298.581 1.298 1.297a1.298 1.298 0 01-2.596 0c0-.716.581-1.297 1.298-1.297z" fill="#CA1016" stroke="#CA1016" stroke-width=".8"/></svg>
+                        <span>Filtrlər</span>
+                    </div>
+                </div>
+            </div>
+            <div class="moto text-[15px] tablet:hidden bg-[#fff] rounded-[10px] flex flex-wrap justify-between items-center  mx-[15px] mt-[8px] mb-[15px] px-[20px] h-[54px]">
+                <a href="">Moto</a>
+                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="17" viewBox="0 0 11 17" fill="none"><script xmlns=""/>
+                    <path d="M0.5 15.55L1.95728 17L10.5 8.5L1.95728 0L0.5 1.45L7.58543 8.5L0.5 15.55Z" fill="#B1B8C6"/>
+                </svg>
+            </div>
+            <div class="avtokataloq tablet:hidden text-[15px] bg-[#fff] rounded-[10px] flex flex-wrap justify-between items-center mx-[15px] mt-[8px] mb-[15px] px-[20px] h-[54px]">
+                <div>
+                <a href="">Avtokataloq</a> 
+                <span class="leading-[18px] bg-[#77c81d] text-[#fff] text-[11px] px-[5px] ml-[10px] rounded-[50px] inline-block">yeni</span>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="17" viewBox="0 0 11 17" fill="none"><script xmlns=""/>
+                    <path d="M0.5 15.55L1.95728 17L10.5 8.5L1.95728 0L0.5 1.45L7.58543 8.5L0.5 15.55Z" fill="#B1B8C6"/>
+                </svg>
+            </div>
+            <div class="elan tablet:hidden px-[15px] pb-[10px]">
+                <span class="mr-[5px]">Bu gün:</span>
+                <a href="#" class="text-[#4c88f9]">1676 yeni elan</a>
+            </div>
+            <div class="banner tablet:hidden h-[100px] text-[center]">
+                <a href=""><img class="h-[100%] mx-[auto] object-cover" src="img/banner.png" alt=""></a>
+            </div>
+            <ul class="product-menu tablet:hidden flex flex-wrap justify-between items-center">
+                <li class="py-[15px] px-[13px]"><a class="border-b border-[#b1b5c7]" href="#">Kreditlə</a></li>
+                <li class="py-[15px] px-[13px]"><a class="border-b border-[#b1b5c7]" href="#">Barter</a></li>
+                <li class="py-[15px] px-[13px]"><a class="border-b border-[#b1b5c7]" href="#">Aksesuarlar</a></li>
+                <li class="py-[15px] px-[13px]"><a class="border-b border-[#b1b5c7]" href="#">Şinlər</a></li>
+                <li class="py-[15px] px-[13px]"><a class="border-b border-[#b1b5c7]" href="#">İcarə</a></li>  
+            </ul>
+            <span class="text-[#8d94ad] tablet:hidden font-medium text-[14px] pl-[15px] pt-[10px] block h-[45px] bg-[#f6f7fa] border-b-[1px] border-[#f1f3f7]">PREMİUM ELANLAR</span>
+            <div class="desktop-menu hidden tablet:block">
+                <div class="containerr tablet:max-w-[973px] m-auto desktop:max-w-[1010px]">
+                    <div class="header-top bg-[#F6F7FA] px-[20px] py-[10px] flex flex-wrap justify-between items-center">
+                        <div class="desktop-left text-[#8d94ad] tablet:text-[15px] desktop:text-[17px]">
+                            <a href="#" class="mr-[25px]">Tap.az</a>
+                            <a href="#" class="mr-[25px]">Bina.az</a>
+                            <a href="#" class="mr-[25px]">Boss.az</a>
+                        </div>
+                        <div class="desktop-right tablet:text-[15px] desktop:text-[17px] flex flex-wrap justify-center items-center">
+                            <span class="ml-[20px]">Dəstək: <a href="" class="hover:text-[#CA1016]">(012) 505-77-55</a></span>
+                            <div class="flex flex-wrap justify-center items-center text-[#8d94ad]">
+                                <a href="" class="ml-[22px]">Yardım</a>
+                                <a href="" class="ml-[22px]">RU</a>
+                                <a href="" class="flex flex-wrap justify-center items-center ml-[20px]">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="27" viewBox="-5 -5 30 27" x="675" y="58"><path d="M14.35.766a4.89 4.89 0 014.212 2.373 4.715 4.715 0 01.432 3.906c-.83 3.651-7.302 7.975-8.993 9.052-1.692-1.077-8.168-5.4-8.975-8.978a4.86 4.86 0 01-.26-1.549c0-.888.245-1.719.672-2.432a4.877 4.877 0 011.848-1.772 4.94 4.94 0 012.362-.6 4.917 4.917 0 014.356 2.615 4.88 4.88 0 01.584-.872A4.901 4.901 0 0114.349.766z" fill="#212C3A" fill-rule="nonzero" stroke="#FFF" stroke-width="1.531" fill-opacity=".297"/></svg>
+                                    <span>Seçilmişlər</span>
+                                </a>
+                                <a href="" class="flex flex-wrap justify-center items-center ml-[20px]">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="31" viewBox="-5 -5 30 31" x="675"><path d="M12.775 13.12c-.72-.346-.534-.934-.56-1.574.934-.666 1.654-1.706 2.026-2.96.295-.16.535-.746.748-1.44.133-.426-.24-.72-.48-.854-.027-1.44-.187-3.013-.934-4.266C12.72.586 11.148 0 9.814 0s-2.906.586-3.76 2.026c-.746 1.28-.906 2.854-.934 4.266-.24.134-.614.454-.48.854.214.694.454 1.28.746 1.44.374 1.254 1.094 2.294 2.026 2.96 0 .64.16 1.254-.56 1.574-.56.266-3.92 1.706-5.146 2.24C.772 15.76 0 16.454 0 17.386v1.094c3.262 0 6.525 2 9.787 2 3.262 0 6.524-2 9.787-2v-1.094c.054-.934-.72-1.6-1.653-2.026-1.225-.534-4.612-1.974-5.145-2.24z" fill="#212C3A" fill-rule="nonzero" stroke="#FFF" stroke-width="1.531" fill-opacity=".297"/></svg>
+                                    <span>Giriş</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <nav class="bg-[#CA1016] text-[#fff] tablet:text-[15px] desktop:text-[17px]">
+                    <div class="containerr tablet:max-w-[973px] desktop:max-w-[1010px] m-auto flex flex-wrap justify-between items-center px-[20px]">
+                        <div class="left-menu flex flex-wrap">
+                            <h1 class="font-bold tablet:text-[16px] desktop:text-[19px] py-[21px] pr-[25px]">TURBO.AZ</h1>
+                            <ul class="flex flex-wrap">
+                                <li class="py-[21px] px-[10px]"><a href="#">Bütün elanlar</a></li>
+                                <li class="py-[21px] px-[10px]"><a href="#">Salonlar</a></li>
+                                <li class="py-[21px] px-[10px]"><a href="#">Avtokataloq</a></li>
+                                <li class="py-[21px] px-[10px]"><a href="#">Moto</a></li>
+                                <li class="py-[21px] px-[10px]"><a href="#">Ehtiyat hissələr və aksesuarlar</a></li>
+                                <li class="py-[21px] px-[10px]"><a href="#">İcarə</a></li>
+                            </ul>
+                        </div>
+                        <a href="" class="flex flex-wrap items-center justify-center rounded-[7px] h-[40px] px-[10px] font-medium bg-[#7ed321] text-[#fff]">
+                            <svg class="mr-[7px]" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 25 25"><script xmlns=""/>
+                                <path fill="#FFF" fill-rule="nonzero" d="M13.75 6.25h-2.5v5h-5v2.5h5v5h2.5v-5h5v-2.5h-5v-5zM12.5 0C5.625 0 0 5.625 0 12.5S5.625 25 12.5 25 25 19.375 25 12.5 19.375 0 12.5 0zm0 22.5c-5.5 0-10-4.5-10-10s4.5-10 10-10 10 4.5 10 10-4.5 10-10 10z"/>
+                            </svg>
+                            <span>Yeni elan</span>
+                        </a>
+                    </div>
+                </nav>
+                <div class="containerr bg-[#EBEDF3]">
+                    <div class="desktop-forms flex flex-wrap tablet:max-w-[990px] desktop:max-w-[1010px] m-auto justify-center items-center gap-[10px] p-[18px] tablet:text-[15px] desktop:text-[17px] text-[#8d94ad]">
+                        <div class="tablet:w-[230px] desktop:w-[235px] bg-[#fff] flex flex-wrap justify-between items-center h-[46px] px-[10px] border-[1px] border-[#dfe3e9] rounded-[7px]">
+                            <span>Marka</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-[15px]" viewBox="0 0 17 10"><script xmlns=""/><path fill="#B1B5C7" fill-rule="nonzero" d="M1.45 0 0 1.457 8.5 10 17 1.457 15.55 0 8.5 7.085z"/></svg>
+                        </div>
+                        <div class="w-[230px] desktop:w-[235px] bg-[#fff] flex flex-wrap justify-between items-center h-[46px] px-[10px] border-[1px] border-[#dfe3e9] rounded-[7px] opacity-[0.5]">
+                            <span>Model</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-[15px]" viewBox="0 0 17 10"><script xmlns=""/><path fill="#B1B5C7" fill-rule="nonzero" d="M1.45 0 0 1.457 8.5 10 17 1.457 15.55 0 8.5 7.085z"/></svg>
+                        </div>
+                        <div class="bg-[#fff] w-[230px] desktop:w-[235px] flex flex-wrap justify-start items-center border-[1px] border-[#dfe3e9] rounded-[7px]">
+                            <div class="bg-[#CA1016] px-[12px] rounded-tl-[7px] rounded-bl-[7px] h-[46px] text-[#fff] flex justify-center items-center">Hamısı</div>
+                            <div class="h-[46px] px-[13px] flex justify-center items-center border-l-[1px] border-r-[1px] border-[#dfe3e9]">Yeni</div>
+                            <div class="h-[46px] px-[11px] flex justify-center items-center">Sürülmüş</div>
+                        </div>
+                        <div class="w-[230px] desktop:w-[235px] bg-[#fff] flex flex-wrap justify-between items-center h-[46px] px-[10px] border-[1px] border-[#dfe3e9] rounded-[7px]">
+                            <span>Şəhər</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-[15px]" viewBox="0 0 17 10"><script xmlns=""/><path fill="#B1B5C7" fill-rule="nonzero" d="M1.45 0 0 1.457 8.5 10 17 1.457 15.55 0 8.5 7.085z"/></svg>
+                        </div>
+                        <div class="bg-[#fff] w-[230px] desktop:w-[235px] flex flex-wrap justify-start items-center border-[1px] border-[#dfe3e9] rounded-[7px]">
+                            <div class="px-[14px] rounded-tl-[7px] rounded-bl-[7px] border-r-[1px] border-[#dfe3e9] h-[46px] flex justify-center items-center">Qiymət, min.</div>
+                            <div class="px-[14px]  h-[46px] flex justify-center items-center">maks.</div>
+                        </div>
+                        <div class="flex flex-wrap tablet:w-[230px] desktop:w-[235px] justify-center items-center gap-[10px]">
+                            <div class="px-[10px] w-[80px] rounded-[7px] h-[46px] flex justify-between bg-[#fff] text-[#000] items-center border-[1px] border-[#dfe3e9]">
+                                <span>AZN</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-[15px]" viewBox="0 0 17 10"><script xmlns=""/><path fill="#B1B5C7" fill-rule="nonzero" d="M1.45 0 0 1.457 8.5 10 17 1.457 15.55 0 8.5 7.085z"/></svg>
+                            </div>
+                            <div class="px-[10px] h-[46px] rounded-[7px] flex justify-center bg-[#fff] text-[#000] items-center border-[1px] border-[#dfe3e9]">Kredit</div>
+                            <div class="px-[10px] h-[46px] rounded-[7px] flex justify-center items-center bg-[#fff] text-[#000] border-[1px] border-[#dfe3e9]">Barter</div>
+                        </div>
+                        <div class="w-[230px] desktop:w-[235px] bg-[#fff] flex flex-wrap justify-between items-center h-[46px] px-[10px] border-[1px] border-[#dfe3e9] rounded-[7px]">
+                            <span>Ban növü</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-[15px]" viewBox="0 0 17 10"><script xmlns=""/><path fill="#B1B5C7" fill-rule="nonzero" d="M1.45 0 0 1.457 8.5 10 17 1.457 15.55 0 8.5 7.085z"/></svg>
+                        </div>
+                        <div class="bg-[#fff] w-[230px] desktop:w-[235px] flex flex-wrap justify-start items-center border-[1px] border-[#dfe3e9] rounded-[7px]">
+                            <div class="px-[14px] rounded-tl-[7px] rounded-bl-[7px] border-r-[1px] border-[#dfe3e9] h-[46px] flex justify-center items-center">
+                                <span>İl, min.</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-[15px]" viewBox="0 0 17 10"><script xmlns=""/><path fill="#B1B5C7" fill-rule="nonzero" d="M1.45 0 0 1.457 8.5 10 17 1.457 15.55 0 8.5 7.085z"/></svg>
+                            </div>
+                            <div class="px-[14px]  h-[46px] flex justify-center items-center">
+                                <span>maks.</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-[15px]" viewBox="0 0 17 10"><script xmlns=""/><path fill="#B1B5C7" fill-rule="nonzero" d="M1.45 0 0 1.457 8.5 10 17 1.457 15.55 0 8.5 7.085z"/></svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-[#EBEDF3]">
+                    <div class="containerr max-w-[960px] pb-[20px] m-auto flex flex-wrap justify-between items-center tablet:text-[15px] desktop:text-[17px]">
+                        <div class="px-[15px] pb-[10px] pt-[5px]">
+                            <span class="mr-[5px]">Bu gün:</span>
+                            <a href="#" class="text-[#4c88f9]">1676 yeni elan</a>
+                        </div>
+                        <div class="flex flex-wrap justify-center items-center">
+                            <span class="text-[#8d94ad] px-[10px] py-[15px] ml-[15px]">Sıfırla</span>
+                            <span class="flex justify-center items-center text-[#ca1016] px-[10px] py-[15px] ml-[15px] gap-[5px]">Daha çox filtr <svg xmlns="http://www.w3.org/2000/svg" width="17" height="9"><script xmlns=""/><path d="M2.102.125.786 1.4 8.5 8.875 16.214 1.4 14.898.125 8.5 6.325z" fill="#CA1016"/></svg></span>
+                            <button class="bg-[#ca1016] text-[#fff] ml-[15px] px-[40px] py-[15px] rounded-[7px]">Elanları göstər</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-[#f1f3f7] h-[60px] border-[1px] border-t-[#eaebf2] border-b-[#eaebf2]">
+                    <div class="containerr max-w-[960px] m-auto">
+                        <span class="text-[18px] font-bold block pt-[15px]">Premium elanlar</span>    
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="bg-[#fafafa]">
+            <div class="cards flex flex-wrap justify-center items-center gap-[10px] px-[10px] py-[20px] max-w-[70%] m-auto"></div>
+        </main>
+        <footer>
+            <div class="tablet:hidden">
+                <ul class="py-[20px] px-[30px] text-[14.5px] border-b-[1px] border-[#eceff6]">
+                    <li class="py-[6px]"><a>Qaydalar</a></li>
+                    <li class="py-[6px]"><a>İstifadəçi razılaşması</a></li>
+                    <li class="py-[6px]"><a>Reklam yerləşdirin</a></li>
+                    <li class="py-[6px]"><a>Sifarişli avtomobil alan alıcı üçün tövsiyələr</a></li>
+                </ul>
+                <div class="py-[20px] px-[30px] text-[14.5px] border-b-[1px] border-[#eceff6]">
+                    <p>Dəstək xidməti</p>
+                    <p class="font-bold">(012) 505-77-55</p>
+                    <span class="text-[12.5px] text-[#8d94ad]">İş saatları — Həftə içi: 09:00-19:00 | Şənbə: 09:00-13:00</span>
+                </div>
+                <div  class="py-[20px] px-[30px] text-[#8d94ad] flex flex-wrap gap-[20px]">
+                    <a class="fa-solid bg-[#eceff6] text-[20px] rounded-[50%] w-[50px] h-[50px] flex justify-center items-center fa-envelope"></a>
+                    <a class="fa-brands bg-[#eceff6] text-[20px] rounded-[50%] w-[50px] h-[50px] flex justify-center items-center fa-facebook-f"></a>
+                    <a class="fa-brands bg-[#eceff6] text-[20px] rounded-[50%] w-[50px] h-[50px] flex justify-center items-center fa-instagram"></a>
+                </div>
+                <a class="text-[12px] py-[20px] px-[30px] font-bold pr-[15px]">Tam versiya</a>
+                <a class="text-[12px] py-[20px] px-[30px] font-bold">Русский язык</a>
+                <p class="text-[#8d94ad] py-[20px] px-[30px] text-[12px]">Saytın Administrasiyası reklam bannerlərinin və yerləşdirilmiş elanların məzmununa görə məsuliyyət daşımır.</p>
+                <p class="text-[#8d94ad] py-[20px] px-[30px] text-[12px]">© 2006-2024 Digital Classifieds MMC. VÖEN: 1405631661</p>
+                <div class="text-[10px] flex justify-between items-center px-[30px]">
+                    <a class="flex justify-center items-center flex-col">
+                        <svg height="20" viewBox="0 0 20 20" width="20" fill="#ca1016" xmlns="http://www.w3.org/2000/svg"><g fill-rule="evenodd"><path d="M29.568.174c.241-.232.623-.232.864 0l9.25 8.866c.206.205.318.475.318.751 0 .574-.468 1.042-1.042 1.042H37.5v7.5c0 .92-.746 1.667-1.667 1.667l-3.85-.001V20h-3.967l-.001-.001h3.968v-5.01c0-.514-.386-.936-.883-.994l-.117-.007h-1.967c-.553 0-1 .448-1 1L28.015 20h-3.848c-.873 0-1.588-.669-1.66-1.522l-.007-.144v-7.5h-1.458c-.574 0-1.042-.468-1.042-1.042 0-.276.112-.546.308-.741z" transform="translate(-29 -680) translate(0 655) translate(9 25)"></path></g></svg>
+                        <span class="text-[#ca1016] uppercase mt-[5px]">Əsas</span>
+                    </a>
+                    <a class="flex justify-center items-center flex-col">
+                        <svg height="20" fill="#8d94ad" viewBox="0 0 24 20" width="24" xmlns="http://www.w3.org/2000/svg"><g fill-rule="evenodd"><g><path d="M19.787.83C18.85.311 17.773.014 16.625.014c-2.026 0-3.84.923-5.037 2.37C10.384.938 8.572.015 6.544.015c-1.145 0-2.22.297-3.16.814C1.367 1.946 0 4.094 0 6.563 0 7.27.115 7.947.323 8.58 1.447 13.631 11.588 20 11.588 20S21.722 13.63 22.848 8.58c.207-.634.324-1.312.324-2.018 0-2.468-1.367-4.615-3.385-5.734z" transform="translate(-250 -680) translate(0 655) translate(232 25) translate(18)"></path></g></g></svg>
+                        <span class="text-[#8d94ad] uppercase mt-[5px]">Seçilmişlər</span>
+                    </a>
+                    <a class="flex justify-center items-center flex-col">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="-5 -5 50 50" x="574" y="507"><path fill="#ca1016" d="M20 0C8.953 0 0 8.954 0 19.998c0 11.045 8.953 20 20 20 11.046 0 20-8.955 20-20C40 8.954 31.046 0 20 0zm11.265 22.368h-8.692v8.915c0 1.431-1.179 2.595-2.61 2.595-1.43 0-2.61-1.163-2.61-2.595v-8.915H8.697c-1.43 0-2.596-1.179-2.596-2.61 0-1.43 1.164-2.61 2.596-2.61h8.656V8.714c0-1.43 1.18-2.595 2.61-2.595 1.431 0 2.61 1.164 2.61 2.595v8.434h8.692c1.431 0 2.596 1.18 2.596 2.61 0 1.431-1.165 2.61-2.596 2.61z"/></svg>
+                        <span class="text-[#8d94ad] uppercase mt-[5px]">Yeni elan</span>
+                    </a>
+                    <a class="flex justify-center items-center flex-col">
+                        <svg height="20" fill="#8d94ad" viewBox="0 0 20 20" width="20" xmlns="http://www.w3.org/2000/svg"><g fill-rule="evenodd"><path d="M9.898 0C4.432 0 0 4.431 0 9.898c0 5.466 4.432 9.898 9.898 9.898 5.467 0 9.899-4.432 9.899-9.898C19.797 4.43 15.365 0 9.898 0zm0 2.96c1.809 0 3.275 1.466 3.275 3.273 0 1.809-1.466 3.274-3.275 3.274-1.808 0-3.273-1.465-3.273-3.274 0-1.807 1.465-3.273 3.273-3.273zm-.002 14.248c-1.804 0-3.456-.657-4.73-1.745-.31-.264-.49-.653-.49-1.06 0-1.833 1.484-3.3 3.318-3.3h3.81c1.834 0 3.312 1.467 3.312 3.3 0 .408-.178.795-.489 1.06-1.274 1.088-2.927 1.745-4.73 1.745z" transform="translate(-326 -680) translate(0 655) translate(306 25) translate(20)"></path></g></svg>
+                        <span class="text-[#8d94ad] uppercase mt-[5px]">Kabinet</span>
+                    </a>
+                    <a class="flex justify-center items-center flex-col">
+                        <svg height="20" fill="#8d94ad" viewBox="0 0 28 22" width="26" xmlns="http://www.w3.org/2000/svg"><path d="M25.917 18.005c.598 0 1.083.56 1.083 1.25s-.485 1.25-1.083 1.25H2.083c-.598 0-1.083-.56-1.083-1.25s.485-1.25 1.083-1.25zm0-8c.598 0 1.083.56 1.083 1.25s-.485 1.25-1.083 1.25H2.083c-.598 0-1.083-.56-1.083-1.25s.485-1.25 1.083-1.25zm0-9c.598 0 1.083.56 1.083 1.25s-.485 1.25-1.083 1.25H2.083C1.485 3.505 1 2.945 1 2.255s.485-1.25 1.083-1.25z" fill-rule="nonzero"></path></svg>
+                        <span class="text-[#8d94ad] uppercase mt-[5px]">Daha çox</span>
+                    </a>
+                </div>
+            </div>
+            <div class="bg-[#F1F3F7] text-[15px] py-[15px] px-[20px] border-b-[1px] border-t-[1px] border-[#d9dee7]">
+                <div class="max-w-[70%] m-auto flex justify-between items-center">
+                    <span>Reklam yerləşdirin</span>
+                    <div class="flex justify-between items-center">
+                        <a class="fa-brands mr-[20px] text-[20px] text-[#8d94ad] fa-facebook-f"></a>
+                        <a class="fa-brands mr-[20px] text-[20px] text-[#8d94ad] fa-instagram"></a>
+                        <a class="fa-solid mr-[10px] text-[20px] text-[#8d94ad] fa-envelope"></a>
+                        <p class="mr-[20px]">turbo@turbo.az</p>
+                        <a class="fa-solid fa-phone text-[#8d94ad] mr-[10px]"></a>
+                        <p>(012) 505-77-55</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-[#F1F3F7] flex justify-around items-center text-[#8d94ad] py-[20px] text-[14px] border-b-[1px] border-[#d9dee7]">
+                <ul id="first"></ul>
+                <ul id="second"></ul>
+                <ul id="third"></ul>
+            </div>
+            <ul class="text-[14px] bg-[#F1F3F7] h-[60px]">
+                <div class="max-w-[70%] m-auto flex flex-wrap pt-[20px]">
+                    <li>
+                        <a>Qaydalar</a>
+                    </li>
+                    <li class="ml-[40px]">
+                        <a>Qanun</a>
+                    </li>
+                    <li class="ml-[40px]">
+                        <a>İstifadəçi razılaşması</a>
+                    </li>
+                    <li class="ml-[40px]">
+                        <a>Məxfilik siyasəti</a>
+                    </li>
+                    <li class="ml-[40px]">
+                        <a>Sifarişli avtomobil alan alıcı üçün tövsiyələr</a>
+                    </li>
+                </div>
+            </ul>
+            <div class="bg-[#ca1016] text-[#fff] text-[13.5px] h-[60px]">
+                <div class="max-w-[70%] m-auto flex justify-between pt-[20px]">
+                    <p class="mr-[40px]">Saytın Administrasiyası reklam bannerlərinin və yerləşdirilmiş elanların məzmununa görə məsuliyyət daşımır.</p>
+                    <span class="ml-[20px]">2006-2024 Digital Classifieds MMC. VÖEN: 1405631661 <a class="ml-[15px]">Mobil versiyası</a></span>
+                </div>
+                
+            </div>
+        </footer>
+        <script src="src/script.js"></script>
+    </body>
+</html>
