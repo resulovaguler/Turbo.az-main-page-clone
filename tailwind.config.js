@@ -1,8 +1,8 @@
 module.exports = {
   content: [
-    './src/**/*.{htm,js,css}',
-    './index.htm', 
-    './src/**/*script.js',
+    './public/**/*.htm',
+    './puclic/**/*index.htm',
+    './puclic/**/*script.js'
   ],
   theme: {
     extend: {
