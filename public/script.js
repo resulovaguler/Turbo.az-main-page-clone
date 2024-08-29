@@ -876,3 +876,60 @@ for (let i = 30; i < 45; i++) {
   th += `<li>${item.brand}</li> </br>`
 }
 third.innerHTML = th
+
+// selectler
+
+const marka = document.querySelector('#marka')
+let code = ''
+let markaSet = new Set()
+
+for (let i = 0; i < data.length; i++) {
+  markaSet.add(data[i].brand)
+}
+let markaArray = Array.from(markaSet)
+for (let j = 0; j < markaArray.length; j++) {
+  code += `<option>${markaArray[j]}</option>`
+}
+marka.innerHTML += code
+
+const model = document.querySelector('#model')
+let modell = ''
+let modelSet = new Set()
+for (let i = 0; i < data.length; i++) {
+  modelSet.add(data[i].model)
+}
+let modelArray = Array.from(modelSet)
+for (let j = 0; j < modelArray.length; j++) {
+  modell += `<option>${modelArray[j]}</option>`
+}
+model.innerHTML += modell
+
+const seher = document.querySelector('#seher')
+let seh = ''
+let seherSet = new Set()
+for (let i = 0; i < data.length; i++) {
+  seherSet.add(data[i].city)
+}
+let seherArray = Array.from(seherSet)
+for (let j = 0; j < seherArray.length; j++) {
+  seh += `<option>${seherArray[j]}</option>`
+}
+seher.innerHTML += seh
+
+
+const ban = document.querySelector('#ban')
+let bann = ''
+let banSet = new Set()
+for (let i = 0; i < data.length; i++) {
+  
+    banSet.add(data[i].banType)
+  
+}
+let banArray = Array.from(banSet)
+for (let j = 0; j < modelArray.length; j++) {
+  if (data[j].banType ){
+    bann += `<option>${banArray[j]}</option>`
+  }
+  
+}
+ban.innerHTML += bann

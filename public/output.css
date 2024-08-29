@@ -554,18 +554,6 @@ video {
   --tw-contain-style:  ;
 }
 
-.visible {
-  visibility: visible;
-}
-
-.collapse {
-  visibility: collapse;
-}
-
-.fixed {
-  position: fixed;
-}
-
 .absolute {
   position: absolute;
 }
@@ -584,10 +572,6 @@ video {
 
 .top-\[10px\] {
   top: 10px;
-}
-
-.z-50 {
-  z-index: 50;
 }
 
 .m-auto {
@@ -680,14 +664,6 @@ video {
   display: inline-flex;
 }
 
-.table {
-  display: table;
-}
-
-.contents {
-  display: contents;
-}
-
 .hidden {
   display: none;
 }
@@ -764,6 +740,10 @@ video {
   width: 80px;
 }
 
+.w-\[90\%\] {
+  width: 90%;
+}
+
 .w-full {
   width: 100%;
 }
@@ -780,16 +760,8 @@ video {
   max-width: 960px;
 }
 
-.border-collapse {
-  border-collapse: collapse;
-}
-
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.resize {
-  resize: both;
 }
 
 .flex-col {
@@ -886,10 +858,6 @@ video {
 
 .rounded-tl-\[7px\] {
   border-top-left-radius: 7px;
-}
-
-.border {
-  border-width: 1px;
 }
 
 .border-\[1px\] {
@@ -1019,26 +987,6 @@ video {
 .bg-\[\#fff\] {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-gray-50 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(249 250 251 / var(--tw-bg-opacity));
-}
-
-.bg-gray-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(107 114 128 / var(--tw-bg-opacity));
-}
-
-.bg-red-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(220 38 38 / var(--tw-bg-opacity));
-}
-
-.bg-rose-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(225 29 72 / var(--tw-bg-opacity));
 }
 
 .object-cover {
@@ -1272,15 +1220,6 @@ video {
   color: center;
 }
 
-.text-gray-800 {
-  --tw-text-opacity: 1;
-  color: rgb(31 41 55 / var(--tw-text-opacity));
-}
-
-.underline {
-  text-decoration-line: underline;
-}
-
 .opacity-\[0\.5\] {
   opacity: 0.5;
 }
@@ -1297,18 +1236,21 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.outline {
-  outline-style: solid;
-}
-
 *{
   font-family: 'Helvetica';
+  overflow-x: hidden;
 }
 
 @font-face {
   font-family: 'Helvetica';
 
-  src: url('../font/Helveticaa/Helvetica.ttf');
+  src: url('../public/font/Helveticaa/Helvetica.ttf')
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .hover\:text-\[\#CA1016\]:hover {
@@ -1319,6 +1261,10 @@ video {
 @media (min-width: 986px) {
   .tablet\:block {
     display: block;
+  }
+
+  .tablet\:flex {
+    display: flex;
   }
 
   .tablet\:hidden {
